@@ -4,3 +4,4 @@ print( (431 / 100) * 100 )
 #Wat gebeurt hier? Schrijf dit op als commentaar!
 
 #COMMENTAAR: Python die heeft geen zin om het getal af te ronden.
+print(round( (431 / 100) * 100 ))
