@@ -6,4 +6,9 @@ pi = 3.14159
 
 
 straal = int(input("vul hier de straal in "))
-print(straal * straal * pi)
+
+print("de oppervlakte van een cirkel met straal" , straal , " is " , straal *  straal * pi)
+print("de omtrek van een cirkel met straal" , straal , " is " , pi * (straal * 2))
+
+
+
