@@ -13,8 +13,8 @@ a = 7
 b = 7
 
 if (a > b):
-    print("variabele a is het grootst want " , a , "is groter dan" , b)
+    print(f"variabele a is het grootst want {a} is groter dan {b}")
 if (b > a):
-    print("variabele b is het grootst want" , b , "is groter dan" , a)
+    print(f"variabele b is het grootst want {b} is groter dan {a}")
 if (a == b):
     print("variabele a en b zijn gelijk.")
