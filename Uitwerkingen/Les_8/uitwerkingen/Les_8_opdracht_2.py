@@ -32,7 +32,7 @@ elif cijfer == 9:
 elif cijfer == 10:
     omschrijving = "Uitmuntend"
 else:
-    print("Sorry maar het is niet mogelijk om een cijfer hoger dan 10 te scoren")
+    print("Dit kan ik niet omzetten! ")
 if cijfer >= 6:
     print(f"Gefeliciteerd, {omschrijving} je resultaat is een {cijfer}")
 if cijfer < 6:
