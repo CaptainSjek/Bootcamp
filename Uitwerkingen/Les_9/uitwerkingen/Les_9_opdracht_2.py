@@ -11,8 +11,6 @@
 
 getal = 77
 
-
-
 if getal % 7 == 0 or 11 == 0:
     print("Dit getal is zonder rest deelbaar door 7 en 11")
 else:
