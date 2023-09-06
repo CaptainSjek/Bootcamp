@@ -9,8 +9,8 @@
 #Test je programma door a en b een paar keer een andere waarde te geven.
 #Als laatste stap laat je de gebruiker de getallen a en b invoeren. Zorg ervoor dat je programma goed blijft werken.
 
-a = 7
-b = 7
+a = int(input("Vul hier leeftijd A in."))
+b = int(input("Vul hier leeftijd B in."))
 
 if (a > b):
     print(f"variabele a is het grootst want {a} is groter dan {b}")
