@@ -41,7 +41,7 @@ elif cijfer == 9:
     print("Zeer goed")
 elif cijfer == 10:
     print("Uitmuntend")
-elif cijfer == 0:
-    print("Sorry maar het is niet mogelijk om een 0 als cijfer te scoren")
-else:
-    print("Sorry maar het is niet mogelijk om een cijfer hoger dan 10 te scoren")
+#elif cijfer == 0:
+#    print("Sorry maar het is niet mogelijk om een 0 als cijfer te scoren")
+#else:
+#    print("Sorry maar het is niet mogelijk om een cijfer hoger dan 10 te scoren")
