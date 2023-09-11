@@ -4,4 +4,4 @@
 
 woord = input("Vul hier een willekeurig woord in. ")
 
-print(len(woord))
+print(f"Het woord is: {woord} en het bestaat uit {len(woord)} tekens. ")
