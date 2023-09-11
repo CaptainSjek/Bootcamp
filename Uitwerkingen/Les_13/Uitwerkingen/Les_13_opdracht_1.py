@@ -6,12 +6,12 @@
 # Is dat het geval: print klein verhaaltje met daarin de naam naam en kleur.
 # #Anders print je: "Deze kleur is niet zo geweldig!"
 
-tuple = ("Rood" , "Groen" , "Blauw" , "Geel" , "Paars")
+mytuple = ("Rood" , "Groen" , "Blauw" , "Geel" , "Paars")
 naam = input("Wat is jouw naam? ")
 answer = input("Wat is jouw favoriete kleur? ")
 
 
-if tuple == answer:
-    print(f"Hoi {naam}, ik vind {tuple} ook een mooie kleur! ")
+if answer in mytuple:
+    print(f"Hoi {naam}, ik vind {answer} ook een mooie kleur! ")
 else:
     print("Deze kleur is niet zo geweldig! ")
