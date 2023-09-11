@@ -7,12 +7,11 @@ woorden = []
 #cijfers.append(input("vul hier 5 woorden in"))
 
 for x in range(5):
-    woord = input("voer een woord in ")
+    woord = (input("voer een woord in "))
     woorden.append(woord)
-
-    print("De ingevoerde woorden zijn. ")
-    for woord in woorden:
-        print(woord)
+print("De ingevoerde woorden zijn. ")
+for woord in woorden:
+    print(woord)
 
 
 
