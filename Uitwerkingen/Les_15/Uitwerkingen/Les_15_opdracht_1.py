@@ -5,8 +5,10 @@ get1 = 25
 get2 = 10
 
 
-def toevoegen(c, h):
+def toevoegen(c, h) ->int:
     i = c + h
     return i
 print(toevoegen(get1 , get2 ))
+
+
     
