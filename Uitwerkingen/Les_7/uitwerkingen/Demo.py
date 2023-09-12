@@ -49,8 +49,3 @@
 # #    print("True")
 # #    b-=1
 
-fruits = ['apple', 'banana', 'cherry']
-
-fruits.pop(0)
-
-print(fruits)
