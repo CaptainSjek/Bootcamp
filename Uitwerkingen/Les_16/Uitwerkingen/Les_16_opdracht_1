@@ -1,0 +1,34 @@
+# Opdracht 1:
+# Pak opdracht 3 van gisteren.
+# Kijk eens naar de functies: get_integer en get_float.
+# Voer hier eens een string (bijv.: zes) in! Wat gebeurt er?
+# Los dit probleem op met een try en except.
+
+# Let op: Zorg ervoor dat je net zolang om een getal vraagt tot de gebruiker een geldig getal heeft ingevoerd.
+
+#Functie Get Integer
+def get_integer(prompt):
+    while True:
+        try:
+            user_input = input(prompt)
+            integer_value = int(user_input)
+            return integer_value
+        except ValueError:
+            print("Ongeldige invoer.")
+
+integer_input = get_integer("Voer een geheel getal in: ")
+print("Ingevoerd geheel getal:", integer_input)
+
+
+#Functie Get Float
+def get_float(prompt):
+    while True:
+        try:
+            user_input = input(prompt)
+            float_value = float(user_input)
+            return float_value
+        except ValueError:
+            print("Ongeldige invoer" )
+
+float_input = get_float("Voer een komma getal in: ")
+print("Ingevoerd komma getal: ", float_input)
