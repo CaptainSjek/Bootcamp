@@ -11,7 +11,7 @@
 # Let op: Op de plek van <naam> toont het programma de ingevoerde naam.
 
 naam = input("Vul hier je naam in: ")
-leeftijd = (input("Vul hier je leeftijd in: "))
+leeftijd = int(input("Vul hier je leeftijd in: "))
 
 if leeftijd >= 18:
     print(f"Beste {naam}, je bent 18 of ouder en mag dus alleen autorijden (met rijbewijs althans). ")
