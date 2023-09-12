@@ -11,10 +11,10 @@
 # Test je programma door de variabelen te wijzigen.
 
 leeftijd = int(input("Vul hier je leeftijd in. "))
-snor = input("Heb je een snor? vul in J voor ja of N voor nee. ")
-diploma = input("Heb je een diploma? Vul in J voor ja of N voor nee. ")
+snor = input("Heb je een snor? vul in J voor ja of N voor nee. ").upper()
+diploma = input("Heb je een diploma? Vul in J voor ja of N voor nee. ").upper()
 
-if leeftijd >= 18 and snor == "J" or leeftijd < 18 and diploma == "J":
+if (leeftijd >= 18 and snor == "J") or (leeftijd < 18 and diploma == "J"):
     print("Gefeliciteerd je bent aangenomen.")
 else:
     print("Sorry je bent helaas niet aangenomen.")
