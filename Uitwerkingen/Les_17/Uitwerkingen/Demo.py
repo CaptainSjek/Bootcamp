@@ -17,7 +17,7 @@ getal_invullen = True
 while getal_invullen:
     try:
         raadgetal = int(input("raad een getal tussen 1 en 5 "))
-    except VijalueError:
+    except ValueError:
         print("vul een getal in tussen 1 en 5! ")
     if raadgetal == getal1:
         print(colored("goed geraden", "green"))

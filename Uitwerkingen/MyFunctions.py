@@ -23,7 +23,7 @@
 # Pas als de gebruiker precies één letter heeft ingegeven eindigt de functie, en de letter wordt dan als een hoofdletter geretourneerd.
 
 
-
+import random
 
 
 #Functie Get Integer
@@ -77,3 +77,6 @@ def get_letter(prompt):
 
 letter_value = get_letter("Voer hier een letter in van het alfabet: ")
 print("Ingevoerde letter:", letter_value)
+
+
+
