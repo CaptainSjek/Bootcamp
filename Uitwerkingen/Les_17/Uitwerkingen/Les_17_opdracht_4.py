@@ -7,12 +7,14 @@ import random
 from Raadspel import *
 getal = random.randint(1,5)
 doorgaan = True
-levens = 5
-rondes = 0
-fout = 1
-# vraag = input("Type J of N: ")
+levens = 10
+rondes = 1
+fout = 0
+antwoord = "j, ja, y, yes"
 nee = "N"
-ja = "J"
+
+
+print(getal)
 while doorgaan:
     try:
         inputgetal = int(input("Vul hier een getal in tussen de 1 en 5: "))
@@ -20,25 +22,26 @@ while doorgaan:
         print("Vul een legitiem getal in! ")
     if inputgetal == getal:
         print(f"\033[32mJe hebt het getal goed geraden!\033[0m")
-        doorgaan = False
-        for i in range(2):
-            vraag = input("Wil je nog een keer spelen? Type J of N: ")
-            if vraag == ja:
-                raadspel()
-                while vraag >= 0:
-                    rondes += 1
-            else:
-                print("Bedankt voor het spelen")
-                while inputgetal != getal:
-                    fout += 1
-            print(f"Je hebt {rondes} keer gespeeld en {fout} keer het verkeerde getal geraden. ")            
-    elif levens == 0:
-        doorgaan = False
-    else:
-        levens -= 1 
-        print("\033[31mJe hebt het getal niet goed geraden! \033[0m")
-#        doorgaan = True
+        vraag = input("Wil je nog een keer spelen? Type J of N: ").lower()
+        rondes += 1
+        if vraag in antwoord:
+            getal = random.randint(1, 5)
+            levens = 10
+        else:
+            print("Bedankt voor het spelen, tot de volgende keer! ")
+            doorgaan = False
+    elif levens >= 1:
+        levens -= 1
         fout += 1
+        print("\033[31mHelaas! Je hebt het getal niet goed geraden. \033[0m")
+        doorgaan = True
+
+    if levens == 0:
+        vraag = input("Wil je nog een keer spelen? Type J of N: ")
+        if vraag in antwoord:
+                getal = random.randint(1,5)
+                levens = 10
+        else:
+            print("Bedankt voor het spelen, tot de volgende keer! ")
+            doorgaan = False
 print(f"Je hebt {rondes} keer gespeeld en {fout} keer het verkeerde getal geraden. ")
-# if vraag == ja:
-#     raadspel()

@@ -28,23 +28,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Opdracht 4:
 # Verslavend: de gebruikers vinden je game zo leuk dat ze er niet mee kunnen stoppen.
 # Pas je game daarom als volgt aan: 
