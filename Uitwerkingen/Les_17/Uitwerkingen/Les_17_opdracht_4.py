@@ -7,8 +7,8 @@ import random
 from Raadspel import *
 getal = random.randint(1,5)
 doorgaan = True
-levens = 10
-rondes = 1
+levens = 3
+rondes = 0
 fout = 0
 antwoord = "j, ja, y, yes"
 nee = "N"
@@ -26,7 +26,7 @@ while doorgaan:
         rondes += 1
         if vraag in antwoord:
             getal = random.randint(1, 5)
-            levens = 10
+            levens = 3
         else:
             print("Bedankt voor het spelen, tot de volgende keer! ")
             doorgaan = False
@@ -37,10 +37,11 @@ while doorgaan:
         doorgaan = True
 
     if levens == 0:
-        vraag = input("Wil je nog een keer spelen? Type J of N: ")
+        vraag = input("Oei, je levens zijn op! Wil je nog een keer spelen? Type J of N: ")
         if vraag in antwoord:
+                raadspel()
                 getal = random.randint(1,5)
-                levens = 10
+                levens = 3
         else:
             print("Bedankt voor het spelen, tot de volgende keer! ")
             doorgaan = False
