@@ -54,7 +54,7 @@ import random
 from Raadspel import *
 getal = random.randint(1,5)
 doorgaan = True
-levens = 10
+levens = 5
 rondes = 1
 fout = 0
 nee = "N"
@@ -65,22 +65,22 @@ while doorgaan:
         inputgetal = int(input("Vul hier een getal in tussen de 1 en 5: "))
     except ValueError:
         print("Vul een legitiem getal in! ")
+        continue
     if inputgetal == getal:
         print(f"\033[32mJe hebt het getal goed geraden!\033[0m")
         doorgaan = False
-        vraag = input("Wil je nog een keer spelen? Type J of N: ").upper()
+        vraag = input("Wil je nog een keer spelen? Type J of N: ")
         rondes += 1
         if vraag == ja:
             raadspel()
         else:
-            print("Bedankt voor het spelen")
-            #print(f"Je hebt {rondes} keer gespeeld en {fout} keer het verkeerde getal geraden. ")            
-    elif levens == 0:
-        doorgaan = False
+            print("Bedankt voor het spelen")         
     else:
-        levens -= 1 
+        levens -= 1
         fout += 1
+        doorgaan = False
         print("\033[31mJe hebt het getal niet goed geraden! \033[0m")
+
     if levens == 0:
         doorgaan = False
 print(f"Je hebt {rondes} keer gespeeld en {fout} keer het verkeerde getal geraden. ")
