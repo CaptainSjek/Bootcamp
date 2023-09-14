@@ -17,14 +17,11 @@ antwoord = "j, ja, y, yes"  #Input of de gebruiker door wilt spelen
 
 print(getal)
 while doorgaan:                                                                 #
-    if inputgetal > 5:
-        raise ValueError
-        break
-
-
     try:                                                                        # Hier vraagt de computer de speler om een getal tussen de 1 en 5 te kiezen
         inputgetal = int(input("Vul hier een getal in tussen de 1 en 5: "))     # Als de gebruiker geen 
-
+        # if inputgetal > 5:
+        #     raise ValueError
+        # break
     except ValueError:                                                          #
         print("Dit getal is hoger dan 5! Je verliest een leven :-( ")           #
     if inputgetal == getal:                                                     #
