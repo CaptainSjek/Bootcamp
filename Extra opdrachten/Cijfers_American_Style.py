@@ -5,10 +5,22 @@
 #  Als de gebruiker een cijfer buiten het gegeven bereik ingeeft, moet je een foutmelding geven.
 
 cijfer = float(input("Vul hier je cijfer in: "))
+A = range(8.5,10)
+B = range(7.5,8)
+C = range(6.5,7)
+D = range(5.5,6)
+f = range(0,5)
 
-if cijfer in <:
+
+
+
+if cijfer in A:
     print("In Amerika zou je een A hebben. ")
-# elif cijfer in float(range(7.5,8)):
-#     print("In Amerika zou je een B hebben. ")
-# elif cijfer in float(range(6.5,7)):
-#     print("In Amerika zou je een C hebben. ")
+elif cijfer in B:
+    print("In Amerika zou je een B hebben. ")
+elif cijfer in C:
+    print("In Amerika zou je een C hebben. ")
+elif cijfer in D:
+    print("In Amerika zou je een D hebben. ")
+else:
+    print("In Amerika zou je een F hebben. ")

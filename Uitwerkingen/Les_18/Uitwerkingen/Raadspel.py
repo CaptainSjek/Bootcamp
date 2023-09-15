@@ -18,9 +18,8 @@ def raadspel():
             print("\033[31mJe hebt het getal niet goed geraden! \033[0m")
             doorgaan = True
 
-def rangecheck():
-        # inputgetal = int(input("Vul hier een getal in tussen de 1 en 5: "))
-        if inputgetal > 5:
+def rangecheck(inputgetal):
+    if inputgetal > 5:
             raise ValueError 
 
 

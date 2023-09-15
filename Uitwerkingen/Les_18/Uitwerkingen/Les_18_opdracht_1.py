@@ -21,9 +21,9 @@ print(getal)
 while doorgaan:                                                                 #
     try:                                                                        # Hier vraagt de computer de speler om een getal tussen de 1 en 5 te kiezen
         inputgetal = int(input("Vul hier een getal in tussen de 1 en 5: "))     # Als de gebruiker geen 
-        rangecheck()
+        rangecheck(inputgetal)                                                  # Functie ingesteld op dat als er een getal boven de 5 wordt ingevoerd het een leven kost
         # if inputgetal > 5:
-        #     raise ValueError        
+            # raise ValueError        
     except ValueError:                                                          #
         print("\033[31mDit getal is hoger dan 5! Dit kost je een leven :-(\033[0m ")           #
     if inputgetal == getal:                                                     #
@@ -52,3 +52,7 @@ while doorgaan:                                                                 
             print("Bedankt voor het spelen, tot de volgende keer! ")
             doorgaan = False
 print(f"Je hebt {rondes} keer gespeeld en {fout} keer het verkeerde getal geraden. ")
+
+def rangecheck(inputgetal):
+    if inputgetal > 5:
+            raise ValueError 
