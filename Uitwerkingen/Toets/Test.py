@@ -24,3 +24,13 @@ elif getal < MAX:
   input(f"Het getal is kleiner dan {MAX}")
 else:
    input(f"Het getal is gelijk aan {MAX}")
+
+def som_functie(a, b, c):
+    totaal = a + b + c
+    return totaal
+
+getal1 = 200
+getal2 = 5
+getal3 = 12
+antwoord = som_functie(getal1, getal2, getal3)# of de naam van je eigen functie.
+print(f"De som van {getal1} + {getal2} + {getal3} = {antwoord}")

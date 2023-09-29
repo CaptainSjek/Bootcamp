@@ -15,7 +15,6 @@ a = 5  # dit is een voorbeeld van het datatype: Integer
 b = 10.5 # dit is een voorbeeld van het datatype: Float
 c = "Hallo wereld" # dit is een voorbeeld van het datatype: String
 
-
 # Opdracht 3
 # Schrijf code die de waarden van a en b omwisselt. Gebruik daarvoor een extra variabele.
 a = 5
@@ -34,8 +33,8 @@ print(f"Dan duurt het nog ongeveer {som} jaar voordat je met pensioen mag!")
 #Opdracht 5: 
 # Schrijf een functie die 3 getallen bij elkaar optelt en zorg ervoor
 # dat de uitkomst ervan wordt getoond in de print
-def som_functie(getal1, getal2, getal3):
-    totaal = getal1 + getal2 + getal3
+def som_functie(a, b, c):
+    totaal = a + b + c
     return totaal
 
 getal1 = 200
@@ -43,7 +42,6 @@ getal2 = 5
 getal3 = 12
 antwoord = som_functie(getal1, getal2, getal3)# of de naam van je eigen functie.
 print(f"De som van {getal1} + {getal2} + {getal3} = {antwoord}")
-
 
 #Opdracht 6:
 # Maak de volgende code af:# Je moet bijbetalen als je over je minuten of je GB's heen gaat en geen onbeperkt abonnement hebt.
@@ -57,13 +55,10 @@ if aantal_GB_internet > AANTAL_GB or aantal_minuten_gebeld > AANTAL_MINUTEN:
 else:
     print("Niet aan de hand gebruik je mobiel lekker verder!")
 
-
 #Opdracht 7:
 # Print onder elkaar de getallen 1-250 met max 2 regels code.
 for i in range(250):
     i+=0
-
-
 
 #Opdracht 8:
 # Gegeven is:
