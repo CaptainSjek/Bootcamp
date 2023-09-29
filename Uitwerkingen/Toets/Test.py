@@ -1,11 +1,18 @@
-#Opdracht 6:
-# Maak de volgende code af:# Je moet bijbetalen als je over je minuten of je GB's heen gaat en geen onbeperkt abonnement hebt.
-AANTAL_GB = 20 # Aantal GB data in je bundel
-AANTAL_MINUTEN = 200 # Aantal belminuten in je bundel
-ONBEPERKT = False # test ook met True
-aantal_minuten_gebeld = int(input("Hoeveel minuten heb je gebeld?"))
-aantal_GB_internet = int(input("Hoeveel GB's heb je gebruikt?"))
-if aantal_GB_internet > AANTAL_GB or aantal_minuten_gebeld > AANTAL_MINUTEN:
-    print("Let op: je moet bijbetalen!")
-else:
-    print("Niet aan de hand gebruik je mobiel lekker verder!")
+getal = (0,1,2,3,4,5,6,7,8,9,10)
+doorgaan = True
+
+# while doorgaan:
+#     try:
+#         cijfer not in range(0,10):
+#         print(cijfer)
+#     if cijfer in range(0,10):
+#         break
+while doorgaan:                                                                 
+        try:                                                                        
+            cijfer = int(input("Voer hier een willekeurig getal in: "))
+            if cijfer > 10:
+             raise ValueError        
+        except ValueError:                                                          
+            print("\033[31mDit getal is te hoog probeer het nog eens! \033[0m ")
+        if cijfer == getal:                                                     
+            print(f"\033[32mJe hebt het getal goed geraden! \033[0m")               

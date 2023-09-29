@@ -59,6 +59,45 @@ else:
 
 #Opdracht 7:
 # Print onder elkaar de getallen 1-250 met max 2 regels code.
-
 for i in range(250):
+    i+=0
 
+
+
+#Opdracht 8:
+# Gegeven is:
+lijst_eten = ['appel', 'pannenkoek', 'kiwi', 'broodjehamburger']
+
+#Opdracht A
+print("Onze Menukaart:")
+print("Appel")
+print("Pannenkoek")
+print("Kiwi")
+print("Hamburger")
+
+# Opdracht B
+max_lengte = -1
+for lengte in lijst_eten:
+    if len(lengte) > max_lengte:
+        max_lengte = len(lengte)
+        antwoord = lengte
+ 
+print(f"Het langste woord is :  {antwoord}")
+
+# Opdracht 9:
+# Schrijf een programma wat de gebruiker vraagt een cijfer in te voeren via de terminal.
+# Dit blijf je herhalen totdat de gebruiker een getal tussen 0 en 10 heeft ingevoerd.
+# Voert de gebruiker iets anders in dan een getal: geef een foutmelding.
+
+getal = range(0,10)
+doorgaan = True
+
+while doorgaan:                                                                 
+        try:                                                                        
+            cijfer = int(input("Voer hier een willekeurig getal in: "))
+            if cijfer > 10:
+             raise ValueError        
+        except ValueError:                                                          
+            print("\033[31mDit getal is te hoog probeer het nog eens! \033[0m ")
+        if cijfer == getal:                                                     
+            print(f"\033[32mJe hebt het getal goed geraden! \033[0m")               
