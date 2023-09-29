@@ -26,8 +26,9 @@ print(f"a = {b}, b = {a}") # Moet "a = 10 b = 5" printen
 
 # Opdracht 4:
 # Los de problemen op (zonder exception handling).
-leeftijd = input("Hoe oud ben je?")
-print(f"Dan duurt het nog ongeveer (67 - {leeftijd}) jaar voordat je met pensioen mag!")
+leeftijd = int(input("Hoe oud ben je?"))
+som = 67 - leeftijd
+print(f"Dan duurt het nog ongeveer {som} jaar voordat je met pensioen mag!")
 # Is 18 ingevuld? Dan zie je op de terminal: Dan duurt het nog ongeveer 49 jaar voordat je met pensioen mag!
 
 #Opdracht 5: 
